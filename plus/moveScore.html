@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+</head>
+<body>
+
+	<p>scores: </p>
+
+	<input id="score" value="60">
+	<button onclick="myFunction()">Try it</button>
+	<p id="result"></p>
+
+	<canvas id="myCanvas" width="200" height="50" style="border:1px solid #d3d3d3;" >
+	<script>
+
+		function myFunction() {
+			var s,old=0;
+			
+			s = document.getElementById("score").value;
+
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			ctx.fillStyle = "orange";
+
+			ctx.clearRect(0,0,200,50);		
+			ctx.fillRect(0, 0, s*2, 50);
+
+					}
+
+		
+	</script>
+
+</body>
+</html>
