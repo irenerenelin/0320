@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>scores: </p>
+
+	<input id="score" value="60">
+	<button onclick="myFunction()">Try it</button>
+	<p id="result"></p>
+	
+	<script>
+
+
+		function myFunction() {
+			var s;
+			s = document.getElementById("score").value;
+
+			if (s >= 60) {
+				document.getElementById("result").innerHTML = "Over standard";
+			}else{
+				document.getElementById("result").innerHTML = "Under standard";
+			}
+			
+		}
+	</script>
+
+</body>
+</html>
